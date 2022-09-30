@@ -1,0 +1,310 @@
+
+@media (max-width: 768px){
+.container{ max-width: 815 px;}
+}
+
+*{ 
+    margin: 0;
+    padding: 0;
+}
+img{
+    max-width: 100%;
+    height: auto;
+} 
+html{
+    font-size: 75%;scroll-behavior: smooth;
+}
+body{
+    color: #979797;
+}
+h1{font-size: 25px;}
+h2{font-size: 20px;}
+p{font-size: 14px;}
+@media (max-width: 992px){
+    html{font-size: 60%;}
+}
+/*========HEADING======NAV=====*/
+
+header{    
+    background: #99e2cb;
+    overflow: hidden;
+    clear: both;
+}
+.header_area{
+    padding: 2rem 0;
+}
+.logo{
+    float: left;
+    width: 20rem; 
+}
+.main_nav{
+    background: red;
+    float: right;
+    padding: 1rem;
+    margin: 0;
+    border-radius: 1rem;
+    width: auto !important;
+}
+.main_nav li{
+    margin-left: 2rem;
+}
+.main_nav li a{
+    color: #fff;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+}
+.navbar-collapse {
+    flex-grow: 0;
+}
+/*===========sticky_menu=========*/
+.sticky{
+    position: fixed;
+    background: rgb(100, 230, 244);
+    top: 0;
+    left: 0;
+    padding: 1% 1% 0 1%;
+    width: 100%;
+    z-index: 9999;
+}
+.sticky .main_nav { padding: 1rem;}
+
+/*==========================
+        SLIDER AREA
+-============================*/
+.slider_area{
+    padding: 3rem 0;
+    border-top: .1rem solid #333333;
+    
+}
+.slider_area p{
+    font-size: 2.5rem;
+    background: #ccbaca;
+    color: #333333;
+    text-align: center;
+    margin-bottom: 1rem;
+    padding: 1%;
+    border-radius: .5rem;
+    border-bottom: .2rem solid #333;
+}
+.item{
+    position: relative;
+}
+.slider_caption{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.slider_caption h1{
+    color: #fff;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-style: italic;
+    text-align: center;
+}
+a button{
+    padding: .5rem 2.5rem;
+    font-size: 1.6rem;
+    border: 0;
+    border-radius: 1rem;
+    background: red;
+    margin-top: 0;
+    box-shadow: inset 2px 0px 0px 3px #fff;
+}
+.separator{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+.separator::before,
+.separator::after{
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid #000
+}
+.separator:not(:empty)::before{
+    margin-right: .25em;
+}
+.separator:not(:empty)::after{
+    margin-left: .25em;
+}
+
+
+
+/*==========================
+        HERO AREA
+-============================*/
+section{
+    overflow: hidden;
+    clear: both;
+}
+.hero_section{
+    background: #f2eaea;
+    padding: 2rem 0;
+}
+.client_photo img{
+    width: 7rem;
+    height: 7rem;
+    float: left;
+    margin:0 1rem 1rem 0;
+}
+.client_review p{
+    font-size: 1.4rem;
+    margin-bottom: 0rem;
+}
+.client_review a{
+    font-size: 1.4rem;
+    color: #e2494b;
+    text-decoration: none;
+    float: left;
+}
+/*==========================
+        WORK AREA
+-============================*/
+#work_section{
+    width: 100%;
+    clear: both;
+    padding: 3rem 0;
+}
+.image img{
+    width: 18rem;
+    height: 18rem;
+    margin-bottom: 2rem
+}
+.image {
+   float: left;
+}
+.image p{
+   float: left;
+    margin-top: 1rem
+}
+.image a{
+    margin-top: 1rem;
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: #666666;
+}
+
+/*==========================
+        WORK AREA2 Bottom
+-============================*/
+.work_area2{
+    padding: 2rem 0;
+}
+.work_area2 img{
+    width: 30rem;
+    height: 16rem;
+}
+/*==========================
+        CONTACT SECTION
+-============================*/
+.contact_section{
+    padding: 4rem 0;
+    background: #e2e2e2;
+}
+.contact_section h2{
+    font-size: 1.6rem;
+    color: #333333;
+    padding-bottom: 2rem;
+}
+.contact_section h3{
+    font-size: 1.4rem;
+    color: #e2494b;
+    padding-bottom: 2rem;
+}
+.contact_section p{
+    font-size: 1.4rem;   
+}
+.child_contact h4{
+    margin-top: 5rem;
+    font-size: 1.3rem;
+}
+.child_contact a{
+    margin-top: .3rem;
+    font-size: 1.3rem;
+    float: right;
+    text-decoration: none;
+    color: #e2494b;
+}
+.child_contact h3{
+    float: left;
+    padding-top: 2rem;
+    padding-bottom: .3rem;
+}
+.contact_area span{
+    font-size: 15px;
+    color: #333;
+    text-decoration: none;
+}
+/*==================IMG====CONtact======*/
+
+.contact_image img{
+   width: 15rem;
+   height: 9rem;
+}
+
+.contact_image{
+    width: 30rem;
+    height: 10rem;
+    margin-right: 1rem;
+    border: .1rem solid red;
+    padding: .3rem;
+}
+/*==================form====CONtact======*/
+form input[type="text"], 
+form input[type="email"],
+form  textarea{
+    width: 100%;
+    border: 0;
+    margin: .5rem 0;
+    padding: .7rem 0;
+    background: #fff;
+    border-radius: .5rem;
+}
+form  textarea{
+    height: 10rem;
+}
+input[type="submit"]{
+    border: 0;
+    background: #e2494b;
+    color: #fff;
+    font-size: 1.4rem;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+form ::placeholder{
+    color: #000;
+    text-transform: capitalize;
+    padding: 1rem;
+}
+/*==========================
+        COPYRIGHT AREA
+-============================*/
+.copyright_area{
+    padding: 2rem 0;
+    background: #e2e2e2;
+    border-top: .2rem solid #fff;
+}
+.left_copyright{
+    float: left;
+    width: 60%;
+}
+.right_copyright{
+    float: right;
+    width: 40%;
+    text-align: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
